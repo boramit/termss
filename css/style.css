@@ -87,6 +87,11 @@ td + td {border-left: 1px solid #E7EBEE;}
 #wrap #contents_wrap .cont_wrap .terms_sum div {font-size: 15px;}
 
 
+#wrap #contents_wrap .cont_wrap .prod_list {display: flex; justify-content: center; align-items: center; text-align: center;}
+#wrap #contents_wrap .cont_wrap .prod_list .prod_img {display: flex; justify-content: center; align-items: center; background: #000;}
+#wrap #contents_wrap .cont_wrap .prod_list .prod_name {padding: 5px 0;}
+
+
 .title24_800 {font-size: 24px; font-weight: 800; color: #101010; padding-top: 15px; line-height: 35px;}
 .title20_800 {font-size: 22px; font-weight: 800; color: #101010; line-height: 35px;}
 .title20_600 {font-size: 20px; font-weight: 600; color: #101010;}
