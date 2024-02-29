@@ -57,7 +57,7 @@ img {max-width: 100%;}
 .align_l {text-align: left;}
 .btn_download2 {font-size: 14px; font-weight: 500; margin-top: 0px; padding: 10px 20px; color: #fff; background: #000; border-radius: 50px;}
 .align_l {text-align: left;}
-/* .align_l > span {font-weight: 600;} */
+.manual_txt > p::before { content: '• ';}
 
 .won {display: inline-block; width: 100%; text-align: right; font-size: 12px;}
 
@@ -87,6 +87,12 @@ td + td {border-left: 1px solid #E7EBEE;}
 #wrap #contents_wrap .cont_wrap .terms_sum div {font-size: 15px;}
 
 
+#wrap #contents_wrap .cont_wrap .prod_list {display: flex; justify-content: center; align-items: flex-start; text-align: center; gap: 20px; flex-wrap: wrap;}
+#wrap #contents_wrap .cont_wrap .prod_list li {width: calc((100% - 20px) / 2); transition: all 0.2s;}
+#wrap #contents_wrap .cont_wrap .prod_list .prod_img {display: flex; justify-content: center; align-items: center; background: #F3F5F6;}
+#wrap #contents_wrap .cont_wrap .prod_list .prod_name {padding: 5px 0;}
+
+
 
 .title24_800 {font-size: 24px; font-weight: 800; color: #101010; padding-top: 15px; line-height: 35px;}
 .title20_800 {font-size: 22px; font-weight: 800; color: #101010; line-height: 35px;}
@@ -101,6 +107,7 @@ td + td {border-left: 1px solid #E7EBEE;}
 
 
 .line_border_1 {border: 1px solid #E7EBEE;}
+.line_border_2 {border-bottom: 1px solid #E7EBEE; margin: 15px 0 35px;}
 
 
 
