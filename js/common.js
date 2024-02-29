@@ -53,10 +53,14 @@ $(".select").children("ul").on("click", ".select__item", function(e){
 
   $(".select").removeClass("active");
 
-  // 현재 필요한 기능
   // 상품 설명 선택했을 때 href 이동
   location.href = location.origin + selectHref;
-  console.log(location);
-  // selected 옮겨가기
+});
 
+$(document).on("click", function(e) {
+  const target = e.target;
+  if ($(target).closest(".select").length > 0) {
+    return;
+  }
+  $(".select").removeClass("active");
 });
