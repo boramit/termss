@@ -1,7 +1,6 @@
 // JavaScript Document
 'use strict';
 
-
 window.addEventListener('load',function(){
   preventDefault();
 },false)
@@ -36,6 +35,7 @@ $(".select").children("ul").on("click", ".select__item", function(e){
   let selectID = $(this).closest(".select").data("id");
 
   let selectHref = $(this).data("href");
+  let folderName = location.pathname;
 
   e.stopPropagation();
 
@@ -53,8 +53,20 @@ $(".select").children("ul").on("click", ".select__item", function(e){
 
   $(".select").removeClass("active");
 
-  // 상품 설명 선택했을 때 href 이동
-  location.href = location.origin + selectHref;
+  console.log(location);
+  console.log(location.origin + folderName + selectHref);
+
+  // location.href = location.origin + selectHref;
+
+  // 폴더명 추가
+  // if(folderName.indexOf("/")) {
+  //   folderName = folderName.split("/");
+  //   location.href = location.origin + folderName + selectHref;
+  // } else {
+  //   location.href = location.origin + selectHref;
+  // }
+
+
 });
 
 $(document).on("click", function(e) {
