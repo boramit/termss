@@ -1,7 +1,6 @@
 // JavaScript Document
 'use strict';
 
-
 window.addEventListener('load',function(){
   preventDefault();
 },false)
