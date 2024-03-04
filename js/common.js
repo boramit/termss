@@ -53,15 +53,8 @@ $(".select").children("ul").on("click", ".select__item", function(e){
 
   $(".select").removeClass("active");
 
-  location.href = location.origin + "/termss/" + selectHref;
+  location.href = location.origin + "/termss" + selectHref;
 
-  // 폴더명 추가
-  // if(folderName.indexOf("/")) {
-  //   folderName = folderName.split("/");
-  //   location.href = location.origin + folderName + selectHref;
-  // } else {
-  //   location.href = location.origin + selectHref;
-  // }
 });
 
 $(document).on("click", function(e) {
