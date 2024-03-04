@@ -35,6 +35,7 @@ $(".select").children("ul").on("click", ".select__item", function(e){
   let selectID = $(this).closest(".select").data("id");
 
   let selectHref = $(this).data("href");
+  let folderName = $(this).data("href");
 
   e.stopPropagation();
 
@@ -53,8 +54,10 @@ $(".select").children("ul").on("click", ".select__item", function(e){
   $(".select").removeClass("active");
 
   // 상품 설명 선택했을 때 href 이동
-  location.href = location.origin + "/termss/" + selectHref;
+  location.href = location.origin + "/termss" + selectHref;
 
+  // 폴더명 추가
+  
 });
 
 $(document).on("click", function(e) {
