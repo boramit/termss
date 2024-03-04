@@ -53,7 +53,8 @@ $(".select").children("ul").on("click", ".select__item", function(e){
   $(".select").removeClass("active");
 
   // 상품 설명 선택했을 때 href 이동
-  location.href = location.origin + selectHref;
+  location.href = location.origin + "/termss/" + selectHref;
+
 });
 
 $(document).on("click", function(e) {
