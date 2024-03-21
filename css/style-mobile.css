@@ -76,7 +76,7 @@ table td.fix_200 {height: 150px;}
 table td.top-line {border-top: 1px solid #181A1B !important;}
 table .name_sign {padding: 20px 0;}
 table .name_sign div:last-child {display: flex; justify-content: space-around; font-size: 14px;}
-table .date {display: flex; justify-content: flex-end; width: 80%; margin-left: 5%; padding: 10px 0;}
+table .date {display: flex; justify-content: flex-end; width: 80%; margin-left: 5%; padding: 30px 0;}
 table .date > span {flex-grow: 1; text-align: right; font-size: 14px;}
 
 
