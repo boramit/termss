@@ -67,7 +67,14 @@ table {width: 100%; margin-bottom: 12px; text-align: center;}
 th {border-top: 1px solid #181A1B !important; border: 1px solid #E7EBEE; background-color: #F3F5F6; font-size: 14px; color: #101010; padding: 15px 0;}
 td, tr {border: 1px solid #E7EBEE; padding: 8px; font-size: 14px;}
 table th.fix {width: 30%;}
+table td.fix_20 {width: 20%;}
+table td.fix_30 {width: 30%;}
+table td.fix_200 {height: 200px;}
 table td.top-line {border-top: 1px solid #181A1B !important;}
+table .name_sign {padding: 20px 0;}
+table .name_sign div:last-child {display: flex; justify-content: space-around; font-size: 14px;}
+table .date {display: flex; justify-content: flex-end; width: 80%; margin-left: 5%; padding: 30px 0;}
+table .date > span {flex-grow: 1; text-align: right; font-size: 14px;}
 
 /* 테이블 패딩값 8px 2px 수정 */
 .t_2 > table {width: 100%; text-align: center;}
