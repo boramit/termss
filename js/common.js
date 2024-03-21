@@ -15,14 +15,16 @@ function preventDefault() {
 }
 
 // Select
-let selectState = false;
+let selectState = null;
 
 $(".select").on("click", function(){
   if(!selectState) {
     selectState = true;
     $(this).addClass("active");
     $(this).children("ul").fadeIn("fast").scrollTop();
-  } else {
+  } else if(selectState == null) {
+    selectState = true;
+  } else if(selectState) {
     selectState = false;
     $(".select").removeClass("active");
   }
@@ -71,4 +73,5 @@ $(document).on("click", function(e) {
     return;
   }
   $(".select").removeClass("active");
+  selectState = false;
 });

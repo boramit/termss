@@ -135,8 +135,8 @@ table .date > span {flex-grow: 1; text-align: right; font-size: 14px;}
 .select_wrap .select__value {font-weight: 600;}
 .select_wrap .select__item {display: flex; flex-direction: row; justify-content: flex-start; align-items: center; width: 100%; padding: 20px; background-color: #FFF; font-weight: 500;}
 .select_wrap .select__item + .select__item {border-top: 1px solid #E7EBEE;}
-.select_wrap .select__item.selected {position: relative; font-weight: 700;}
-.select_wrap .select__item.selected::after {position: absolute; top: 50%; right: 16px; transform: translateY(-50%); width: 24px; height: 24px; content: ""; background-image: url(/assets_2nd/img/icon/check.svg); background-repeat: no-repeat; background-position: center; background-size: contain;}
+.select_wrap .select__item.selected {position: relative; font-weight: 700; color: #101010;}
+.select_wrap .select__item.selected::after {position: absolute; top: 50%; right: 16px; transform: translateY(-50%); width: 24px; height: 24px; content: ""; background-image: url(/images/icon_check_black.svg); background-repeat: no-repeat; background-position: center; background-size: contain;}
 
 
 /* footer */
