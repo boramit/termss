@@ -45,13 +45,9 @@ img {max-width: 100%;}
 #wrap #contents_wrap .cont_wrap .terms p > span {font-size: 16px;}
 
 #wrap #contents_wrap .num_info {display: flex; justify-content: space-between; margin-top: 20px;}
-/* #wrap #contents_wrap .num_info > div {display: flex; flex-direction: column; align-items: center; width: 30%; background: #F3F5F6; padding: 15px 5px 20px; text-align: center; border-radius: 5px;} */
 #wrap #contents_wrap .num_info > a {display: flex; flex-direction: column; align-items: center; width: 30%; background: #F3F5F6; padding: 15px 5px 20px; text-align: center; border-radius: 5px; pointer-events: none;}
-/* #wrap #contents_wrap .num_info div .num_img {display: flex; justify-content: center; align-items: center; width: 55px; height: 55px; border-radius: 50%; background: #fff; margin: 5px 0 15px; box-shadow: 0px 8px 5px rgb(230, 230, 230);} */
 #wrap #contents_wrap .num_info a .num_img {display: flex; justify-content: center; align-items: center; width: 55px; height: 55px; border-radius: 50%; background: #fff; margin: 5px 0 15px; box-shadow: 0px 8px 5px rgb(230, 230, 230);}
-/* #wrap #contents_wrap .num_info div .num_img img {width: 30px; opacity: 0.8;} */
 #wrap #contents_wrap .num_info a .num_img img {width: 30px; opacity: 0.8;}
-/* #wrap #contents_wrap .num_info div p {font-size: 18px; font-weight: 800; color: #181A1B;} */
 #wrap #contents_wrap .num_info a p {font-size: 18px; font-weight: 800; color: #181A1B;}
 
 .font_check {display: inline-block; color: var(--point); font-size: 13px;}
