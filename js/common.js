@@ -15,19 +15,32 @@ function preventDefault() {
 }
 
 // Select
+let selectState = false;
+
 $(".select").on("click", function(){
-  $(this).addClass("active");
-  $(this).children("ul").fadeIn("fast").scrollTop();
+  if(!selectState) {
+    selectState = true;
+    $(this).addClass("active");
+    $(this).children("ul").fadeIn("fast").scrollTop();
+  } else {
+    selectState = false;
+    $(".select").removeClass("active");
+  }
 
   if($(this).hasClass("active")) {
     $(".select").not(this).removeClass("active");
   }
 
   let headerOffset = $(this).offset().top;
-  $(".header").animate({
-    scrollTop : headerOffset - 20
-  }, 400);
+    $(".header").animate({
+      scrollTop : headerOffset - 20
+    }, 400);
 });
+
+$(".select").each(function(){
+  console.log($(this).hasClass("active"));
+  
+})
 
 $(".select").children("ul").on("click", ".select__item", function(e){
   let selectValue = $(this).data("value"); // 보이는 ul의 값
