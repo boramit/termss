@@ -37,11 +37,6 @@ $(".select").on("click", function(){
     }, 400);
 });
 
-$(".select").each(function(){
-  console.log($(this).hasClass("active"));
-  
-})
-
 $(".select").children("ul").on("click", ".select__item", function(e){
   let selectValue = $(this).data("value"); // 보이는 ul의 값
   let selectText = $(this).text();
